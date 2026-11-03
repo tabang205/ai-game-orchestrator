@@ -1,0 +1,71 @@
+{
+  "game_name": "Ark Re-Code",
+  "platform": "pc",
+
+  "screen_region": {
+    "comment": "Giữ null (chụp full 1920x1080): template được crop theo tọa độ desktop và click dùng tọa độ tuyệt đối của frame.",
+    "top": null,
+    "left": null,
+    "width": null,
+    "height": null
+  },
+
+  "templates": {
+    "comment": "Sinh bởi tools/crop_templates.py — sửa tọa độ crop ở đó rồi chạy lại, không sửa tay ảnh",
+    "lobby_nav_labels":    "games/ark_recode/templates/lobby_nav_labels.png",
+    "back_btn":            "games/ark_recode/templates/back_btn.png",
+    "daily_title":         "games/ark_recode/templates/daily_title.png",
+    "daily_go_btn":        "games/ark_recode/templates/daily_go_btn.png",
+    "victory_pve_loot":    "games/ark_recode/templates/victory_pve_loot.png",
+    "victory_pve_confirm": "games/ark_recode/templates/victory_pve_confirm.png",
+    "victory_pvp_text":    "games/ark_recode/templates/victory_pvp_text.png",
+    "victory_pvp_end":     "games/ark_recode/templates/victory_pvp_end.png",
+    "task_complete_title": "games/ark_recode/templates/task_complete_title.png",
+    "task_close_btn":      "games/ark_recode/templates/task_close_btn.png",
+    "task_retry_btn":      "games/ark_recode/templates/task_retry_btn.png",
+    "bp_title":            "games/ark_recode/templates/bp_title.png",
+    "bp_collect_btn":      "games/ark_recode/templates/bp_collect_btn.png",
+    "popup_pack_banner":   "games/ark_recode/templates/popup_pack_banner.png",
+    "popup_noah_tab":      "games/ark_recode/templates/popup_noah_tab.png",
+    "energy_icon":         "games/ark_recode/templates/energy_icon.png"
+  },
+
+  "popup_markers": ["popup_pack_banner", "popup_noah_tab"],
+
+  "ocr_regions": {
+    "comment": "Số năng lượng (vd 207/288) nằm ngay bên phải energy_icon; vị trí HUD dịch theo từng màn nên đọc theo offset từ icon.",
+    "energy_from_icon": {"dx": 0, "dy": -4, "width": 110, "height": 40}
+  },
+
+  "click_coords": {
+    "comment": "Tọa độ đo thực tế trên cửa sổ game PC client hiện tại",
+    "daily_open_btn":      [1300, 352],
+    "battle_open_btn":     [1200, 650],
+    "battle_pass_btn":     [1301, 449],
+    "back_btn":            [319, 170],
+    "daily_go_btn":        [1497, 455],
+    "victory_pve_confirm": [1662, 847],
+    "victory_pvp_end":     [1700, 862],
+    "task_retry_btn":      [1374, 772],
+    "task_close_btn":      [992, 769]
+  },
+
+  "daily_chests": [
+    [1215, 325],
+    [1265, 325],
+    [1320, 325],
+    [1420, 325],
+    [1565, 325],
+    [1660, 325]
+  ],
+
+  "match_threshold": 0.82,
+
+  "action_delays": {
+    "after_click_ms":     [500, 900],
+    "between_stages_ms":  [1200, 2000],
+    "battle_wait_s":      [8, 25],
+    "battle_timeout_s":   240,
+    "watchdog_timeout_s": 60
+  }
+}

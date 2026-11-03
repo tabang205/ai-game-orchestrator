@@ -1,0 +1,25 @@
+# Python Virtual Environments & Cache
+.venv/
+venv/
+ai_game_orchestrator/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Secrets & Logs
+.env
+.env.*
+!.env.example
+*.log
+
+# Raw Captures & Temporary Scratch Data
+ark_recode_data/
+scratch/
+tempCodeRunnerFile.py
+
+# OS & IDEs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/

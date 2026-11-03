@@ -1,0 +1,29 @@
+# AI Game Orchestrator — Dependencies
+# Cài đặt: pip install -r requirements.txt
+
+# ── Gemini AI ───────────────────────────────────────────────
+google-genai>=2.31.0
+
+# ── Biến môi trường / bảo mật ──────────────────────────────
+python-dotenv>=1.2.4
+
+# ── Chụp màn hình (thay pyautogui, nhanh hơn nhiều) ────────
+mss>=10.2.0
+
+# ── Computer Vision ─────────────────────────────────────────
+opencv-python>=5.0.0
+
+# ── Input giả lập PC game (DirectX ScanCode) ────────────────
+PyDirectInput>=1.0.4
+
+# ── OCR đọc số (mana, HP) — offline, không cần internet ─────
+rapidocr-onnxruntime>=1.4.4
+
+# ── OpenAI-Compatible Fallback Client (Ollama / OpenRouter) ─
+openai>=1.50.0
+
+# ── FSM (Finite State Machine) ──────────────────────────────
+transitions>=0.9.3
+
+# ── Windows API (tự động dò cửa sổ game) ────────────────────
+pywin32>=306

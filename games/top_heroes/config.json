@@ -1,0 +1,173 @@
+{
+  "game_name": "Top Heroes",
+  "platform": "pc_client",
+  "active_profile": "pc",
+
+  "window_keywords": [
+    "Thời Đại Anh Hùng",
+    "Thoi Dai Anh Hung",
+    "Top Heroes",
+    "TopHeroes",
+    "LDPlayer",
+    "BlueStacks",
+    "NoxPlayer",
+    "MuMuPlayer",
+    "scrcpy"
+  ],
+
+  "profiles": {
+    "pc": {
+      "desc": "Ban PC chuan (Man hinh 16:9 Landscape - Cot chat o giua)",
+      "chat_bag_roi": {
+        "x_min_pct": 0.36,
+        "x_max_pct": 0.64,
+        "y_min_pct": 0.74,
+        "y_max_pct": 0.90
+      },
+      "chat_caravan_roi": {
+        "x_min_pct": 0.36,
+        "x_max_pct": 0.64,
+        "y_min_pct": 0.60,
+        "y_max_pct": 0.90
+      },
+      "close_btn_roi": {
+        "x_min_pct": 0.44,
+        "x_max_pct": 0.56,
+        "y_min_pct": 0.82,
+        "y_max_pct": 0.95
+      },
+      "tabs": {
+        "world": { "x_pct": 0.394, "y_pct": 0.127 },
+        "guild": { "x_pct": 0.464, "y_pct": 0.127 },
+        "activity": { "x_pct": 0.534, "y_pct": 0.127 },
+        "personal": { "x_pct": 0.605, "y_pct": 0.127 }
+      }
+    },
+    "mobile": {
+      "desc": "Ban dien thoai portrait (Cot chat chiem toan man hinh)",
+      "chat_bag_roi": {
+        "x_min_pct": 0.15,
+        "x_max_pct": 0.85,
+        "y_min_pct": 0.75,
+        "y_max_pct": 0.94
+      },
+      "chat_caravan_roi": {
+        "x_min_pct": 0.15,
+        "x_max_pct": 0.85,
+        "y_min_pct": 0.60,
+        "y_max_pct": 0.94
+      },
+      "close_btn_roi": {
+        "x_min_pct": 0.42,
+        "x_max_pct": 0.58,
+        "y_min_pct": 0.89,
+        "y_max_pct": 0.96
+      },
+      "tabs": {
+        "world": { "x_pct": 0.149, "y_pct": 0.146 },
+        "guild": { "x_pct": 0.383, "y_pct": 0.146 },
+        "activity": { "x_pct": 0.617, "y_pct": 0.146 },
+        "personal": { "x_pct": 0.851, "y_pct": 0.146 }
+      }
+    }
+  },
+
+  "roi_config": {
+    "chat_bag_roi": {
+      "desc": "Khu vuc tin nhan moi nhat o cuoi cot chat ban PC (ngay tren o nhap tin)",
+      "x_min_pct": 0.36,
+      "x_max_pct": 0.64,
+      "y_min_pct": 0.74,
+      "y_max_pct": 0.90
+    },
+    "close_btn_roi": {
+      "desc": "Khu vuc nut X mau do o duoi cung modal ket qua ban PC",
+      "x_min_pct": 0.44,
+      "x_max_pct": 0.56,
+      "y_min_pct": 0.82,
+      "y_max_pct": 0.95
+    }
+  },
+
+  "targets": {
+    "bag_icon": "games/top_heroes/targets/bag_icon.png",
+    "card_full": "games/top_heroes/targets/card_full.png",
+    "close_btn": "games/top_heroes/targets/close_btn.png",
+    "tui_loc_text": "games/top_heroes/targets/tui_loc_text.png",
+    "caravan_green_btn": "games/top_heroes/targets/caravan_green_btn.png",
+    "caravan_red_header": "games/top_heroes/targets/caravan_red_header.png",
+    "caravan_red_horse": "games/top_heroes/targets/caravan_red_horse.png"
+  },
+
+  "color_filters": {
+    "diamond_hsv": {
+      "h_min": 80,
+      "s_min": 80,
+      "v_min": 150,
+      "h_max": 115,
+      "s_max": 255,
+      "v_max": 255,
+      "min_pixels_scaled": 15
+    },
+    "card_bg_hsv": {
+      "h_min": 15,
+      "s_min": 60,
+      "v_min": 180,
+      "h_max": 28,
+      "s_max": 255,
+      "v_max": 255,
+      "min_card_area_pct": 0.03
+    },
+    "red_close_btn_hsv": {
+      "range1": [0, 80, 140, 12, 255, 255],
+      "range2": [168, 80, 140, 180, 255, 255],
+      "min_pixels_scaled": 40
+    },
+    "caravan_green_btn_hsv": {
+      "h_min": 28,
+      "s_min": 50,
+      "v_min": 80,
+      "h_max": 55,
+      "s_max": 255,
+      "v_max": 255,
+      "min_aspect_ratio": 2.0,
+      "max_aspect_ratio": 4.5
+    },
+    "caravan_red_card_hsv": {
+      "range1": [0, 40, 100, 15, 255, 255],
+      "range2": [165, 40, 100, 180, 255, 255],
+      "min_card_red_ratio": 0.20
+    }
+  },
+
+  "detection": {
+    "downscale_factor": 0.25,
+    "template_threshold": 0.80,
+    "fast_color_trigger": true
+  },
+
+  "input": {
+    "mode": "mouse_event",
+    "click_hold_ms": 35,
+    "double_click_close": true,
+    "post_claim_cooldown_ms": 300,
+    "modal_wait_timeout_s": 2.0
+  },
+
+  "guild_routine": {
+    "enabled": true,
+    "interval_sec": 30.0,
+    "render_wait_sec": 0.20
+  },
+
+  "caravan_settings": {
+    "enable_regular": true,
+    "enable_season": true,
+    "horse_match_threshold": 0.70,
+    "btn_match_threshold": 0.70,
+    "max_body_white_ratio": 0.15,
+    "max_header_blue_ratio": 0.15,
+    "verify_wait_ms": 250,
+    "failed_ignore_duration_s": 60.0
+  }
+}
